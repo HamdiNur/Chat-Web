@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <div className='search'>
       <div className="searchForm">
-        <input type="text"  placeholder='find a user '/>
+        <input type="text"  placeholder='Find a user '/>
       </div>
   <div className="userChat">
     <img src="https://cdn-icons-png.flaticon.com/128/11696/11696618.png" alt="" />
