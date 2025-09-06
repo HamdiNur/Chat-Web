@@ -3,10 +3,12 @@ import Add from "../img/addAvater.png";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db } from "../firebase"; // import db here
 import { doc, setDoc } from "firebase/firestore";
+import { useNavigate ,Link} from 'react-router-dom';
 
 const Register = () => {
   const [error, setErr] = useState(false);
-  
+  const navigate=useNavigate()
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const displayName = e.target[0].value;
@@ -44,6 +46,7 @@ const Register = () => {
   }
 );
   await setDoc(doc(db,"userChats",res.user.uid),{});
+  navigate("/")
 
   
 
@@ -71,7 +74,7 @@ const Register = () => {
           <button>Sign Up</button>
           {error && <span> Something went wrong</span>}
         </form>
-        <p>You do have an account? Login</p>
+        <p>You do have an account? <Link to="/login">Login</Link></p>
       </div>
     </div>
   );

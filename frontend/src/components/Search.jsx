@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Search = () => {
+  // const [username,setUsername]
   return (
     <div className='search'>
       <div className="searchForm">
