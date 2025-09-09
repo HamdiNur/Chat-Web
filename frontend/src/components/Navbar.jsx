@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { auth, db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
+import { signOut } from "firebase/auth";
+
 
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
