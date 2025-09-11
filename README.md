@@ -1,4 +1,5 @@
 # Hamdi Chat App
+[🔗 Live Demo](https://chat-3501e.web.app)
 
 Hamdi Chat App is a **real-time messaging platform** built with **React**, **Firebase**, and **Context API**. It allows users to exchange text and image messages, receive updates instantly, and maintain persistent login sessions.
 
